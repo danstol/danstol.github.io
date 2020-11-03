@@ -45,9 +45,6 @@ h1, h2, h3{
   color: #000;
 }
 
-li{
-  list-style-type: none;
-}
 
 #main{
   float: left;
@@ -285,8 +282,9 @@ li{
 /***** fine-tunes on the lists... *****/
 
 #main ul{
-  padding-left: 0.07in;
+  padding-left: 0.09in;
   margin: 0.08in 0;
+  /* list-style-type: none; */
 }
 
 #main li{
@@ -297,7 +295,6 @@ li{
 #main li::before{
   position: relative;
   margin-left: -4.25pt;
-  content: '• ';
 }
 
 .details .concise ul{
@@ -323,6 +320,11 @@ li{
   font-weight: 400;
   font-size: 11pt;
 }
+
+#sidebar ul{
+  list-style-type: none;
+}
+
 
 .side-block{
   margin-top: 0.5in; 
