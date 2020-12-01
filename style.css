@@ -32,7 +32,7 @@
 body{
   width: var(--page-width);
   height: var(--page-height);
-  margin: 0;
+  margin: auto;
   font-family: "Open Sans", sans-serif; 
   font-weight: 300;
   line-height: 1.3;
@@ -53,11 +53,16 @@ h1, h2, h3{
   font-size: 7.5pt;
 }
 
+p {
+    color: black;
+    font-size: small;
+}
+
 #sidebar{
   float: right;
   position: relative; /* for disclaimer */
   width: var(--sidebar-width);
-  height: 135%;
+  height: 160%;
   padding: 0.6in var(--sidebar-horizontal-padding);
   background-color: #f2f2f2;
   font-size: 8.5pt;
@@ -75,6 +80,7 @@ h1, h2, h3{
   left: 0.55in;
   margin-bottom: 0.3in;
   line-height: 1.2;
+  margin-left: 5px;
 }
 
 #title h1{
@@ -90,6 +96,7 @@ h1, h2, h3{
 
 .subtitle{
   font-size: 8pt;
+  margin-left: 2px;
 }
 
 /*** categorial blocks ***/
@@ -200,7 +207,6 @@ h1, h2, h3{
   position: absolute;
   top: var(--decorator-outer-offset-top);
   left: var(--decorator-outer-offset-left);
-  content: ' ';
   display: block;
   width: var(--decorator-outer-dim);
   height: var(--decorator-outer-dim);
@@ -212,7 +218,6 @@ h1, h2, h3{
   position: absolute;
   top: calc(var(--decorator-outer-offset-top) + var(--decorator-border-width));
   left: calc(var(--decorator-outer-offset-left) + var(--decorator-border-width));
-  content: ' ';
   display: block;
   width: calc(var(--decorator-outer-dim) - (var(--decorator-border-width) * 2));
   height: calc(var(--decorator-outer-dim) - (var(--decorator-border-width) * 2));
@@ -352,20 +357,3 @@ h1, h2, h3{
   padding: 0;
 }
 
-#disclaimer{
-  position: absolute;
-  bottom: var(--sidebar-horizontal-padding);
-  right: var(--sidebar-horizontal-padding);
-  font-size: 7.5pt;
-  font-style: italic;
-  line-height: 1.1;
-  text-align: right;
-  color: #777;
-}
-
-#disclaimer code{
-  color: #666;
-  font-family: "Source Code Pro";
-  font-weight: 400;
-  font-style: normal;
-}
