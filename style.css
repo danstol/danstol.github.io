@@ -372,6 +372,7 @@ details>summary span.icon {
 
 details[open] summary span.icon {
   transform: rotate(90deg);
+  transform-origin: left;
 }
 
 summary {
